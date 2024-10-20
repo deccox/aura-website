@@ -7,39 +7,12 @@ const app = express();
 // Configurar a pasta pública
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Configuração do motor de template EJS
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views')); // Aponte para a pasta de views
+
 
 
 app.get('/', (req, res) => {
-  const items = [
-    {
-      img: '/assets/prod1.png',
-      nameItem: 'Serum Ameixa',
-      valor: 'R$600,00',
-      parcelado: '6x R$60,00'
-    },
-    {
-      img: '/assets/prod1.png',
-      nameItem: 'Serum Abacaxi',
-      valor: 'R$600,00',
-      parcelado: '6x R$60,00'
-    },
-    {
-      img: '/assets/prod1.png',
-      nameItem: 'Serum Morango',
-      valor: 'R$600,00',
-      parcelado: '6x R$60,00'
-    },
-    {
-      img: '/assets/prod1.png',
-      nameItem: 'Serum Morango',
-      valor: 'R$600,00',
-      parcelado: '6x R$60,00'
-    },
-  ];
-  res.render('index', { items });
+  
+  res.sendFile('index');
 });
 
 // Iniciar o servidor
