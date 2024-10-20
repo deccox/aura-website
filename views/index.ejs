@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/db387ad2ac.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/project.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('componentes/header') %>
+
+    
+    <%- include('componentes/carrossel') %>
+
+    <div class="hr">
+        <div></div>
+    </div>
+
+
+    <div class="produtos">
+        <% for (let i = 0; i < items.length; i++) { %>
+          <%- include('componentes/carditem', { item: items[i] }) %>
+        <% } %>
+    </div>
+
+    <div class="hr">
+        <div></div>
+    </div>
+
+    <div class="feedback">
+        <p>Acomanhe a Aura</p>
+        <div class="feed-flex">
+            <%- include('componentes/feedback') %>
+            <%- include('componentes/feedback') %>
+            <%- include('componentes/feedback') %>
+        </div>
+    </div>
+
+    <div class="hr">
+        <div></div>
+    </div>
+
+    <%- include('componentes/footer') %>
+
+
+</body>
+</html>

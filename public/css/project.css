@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+/** ======== HEADER CONFIG ==============*/
+header{
+    padding: 0 50px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header .header-img{
+    flex: 1;
+    
+}
+
+header .header-car{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins';
+}
+
+header .header-car .car-infos{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header .header-car > .car-infos span:nth-of-type(2) {
+    font-weight: bold;
+}
+
+/** ======== HEADER CONFIG ==============*/
+
+
+
+
+
+
+
+/** ======== CARROSSEL CONFIG ==============*/
+
+.carrossel{
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrossel img{
+    width: 100%;
+}
+
+/** ======== CARROSSEL CONFIG ==============*/
+
+
+
+
+/** ======== PRODUTOS CONFIG ==============*/
+
+.produtos{
+    max-width: 1900px;
+    height: 100%;
+    max-height: 500px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+
+.produtos .card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    gap: 5px;
+    max-width: 300px;
+}
+
+.produtos .card-img {
+    cursor: pointer;
+    
+}
+
+.produtos .card-img img{
+    width: 100%;
+    
+}
+
+.produtos .card .card-name{
+    
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.produtos .card .card-value{
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos .card .card-value span:nth-of-type(2) {
+
+    font-weight: 800;
+    
+}
+
+.produtos .card .buy-btn{
+    width: 100px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/** ======== PRODUTOS CONFIG ==============*/
+
+
+
+
+/** ======== FEEDBACK CONFIG ==============*/
+
+.feedback{
+    width: 100%;
+    display: flex;
+    font-family: 'Poppins';
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.feedback > p{
+    font-size: 1.9rem;
+
+}
+
+.feedback .feed-flex{
+    display: flex;
+    margin: 0px 50px;
+    justify-content: space-between;
+}
+
+.feedback .feed{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feedback .feed span{
+    font-size: 1rem;
+    
+}
+
+
+/** ======== FEEDBACK CONFIG ==============*/
+
+
+
+
+
+/** ======== FOOTER CONFIG ==============*/
+
+
+.footer{
+    width: 100%;
+    height: 100px;
+    color: black;
+    font-family: 'Poppins';
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 50px;
+}
+
+
+.footer div{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+}
+
+.footer div:nth-of-type(2){
+    align-items: end;
+}
+
+
+
+/** ======== FOOTER CONFIG ==============*/
+
+
+
+
+
+
+/** ======== HR CONFIG ==============*/
+
+.hr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+
+}
+
+.hr div{
+    width: 400px;
+    height: 2px;
+    background-color: black;
+}
+
+/** ======== HR CONFIG ==============*/
